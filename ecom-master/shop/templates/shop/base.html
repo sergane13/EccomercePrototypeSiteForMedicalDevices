@@ -7,12 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   <title>{% block title %} {% endblock title %}</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+
 </head>
 
 <body>
   <!-- bg-white fixed  w-full -->
 
-  <header class="text-gray-700 body-font  bg-white fixed  w-full">
+  <header class="text-gray-700 body-font w-full">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
 
@@ -29,7 +31,7 @@
 
       <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start" id="cart">
         <input
-          class="sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-blue-800 focus:outline-none focus:border-indigo-500 text-base py-2 px-4"
+          class="sm:w-64 w-40 rounded sm:mr-4 mr-2 border focus:outline-none text-base py-2 px-4"
           placeholder="Search....." type="text">
         <button
           class="inline-flex text-white bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded sm:mr-4 mr-2">Search</button>
@@ -39,11 +41,6 @@
       </div>
     </div>
   </header>
-
-  <br>
-  <br>
-  <br>
-  <br>
 
 
   {% block body %}

@@ -1,0 +1,30 @@
+header {
+  background-color: #dde3fd;
+  height: 90px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#hero {
+  width: 100%;
+  height: 70vh;
+  background: url(https://www.usdm.com/getattachment/b822c2c7-5c91-49d4-a7f8-bc614b1b77eb/Medical-Devices.aspx)
+    top center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(10, 34, 153, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
