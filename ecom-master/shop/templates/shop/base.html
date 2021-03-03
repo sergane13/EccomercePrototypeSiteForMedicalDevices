@@ -1,0 +1,246 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>{% block title %} {% endblock title %}</title>
+</head>
+
+<body>
+  <!-- bg-white fixed  w-full -->
+
+  <header class="text-gray-700 body-font  bg-white fixed  w-full">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
+
+        <img src="{% static 'asset/main.png' %}" alt="icon" class="w-10 h-10">
+
+        <span class="ml-3 text-xl">MobilService</span>
+      </a>
+      <nav
+        class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="/man" target="_blank">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="/woman" target="_blank">Products</a>
+        <a class="mr-5 hover:text-gray-900" href="/woman" target="_blank">Contact</a>
+      </nav>
+
+      <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start" id="cart">
+        <input
+          class="sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-blue-800 focus:outline-none focus:border-indigo-500 text-base py-2 px-4"
+          placeholder="Search....." type="text">
+        <button
+          class="inline-flex text-white bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-400 rounded sm:mr-4 mr-2">Search</button>
+        <!-- <a href="/cart" target="_blank"
+          class="inline-flex text-white bg-gray-600 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-400 rounded">Cart
+          20</a> -->
+      </div>
+    </div>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  {% block body %}
+
+  {% endblock body %}
+
+  <hr>
+
+  <footer class="text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">ABOUT</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="/about" target="_blank">About</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="/contact" target="_blank">Contact Us</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="/team" target="_blank">Team</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">HELP</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800" href="/tracker" target="_blank">Track Order</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Shipping</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Report</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Payments</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">POLICY</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Return Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Privacy Policy</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Security</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Sitemap</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SOCIAL</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Facebook</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Instagram</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Twitter</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Youtube</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-200">
+      <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+        <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
+          <input
+            class="sm:w-64 w-40 bg-gray-100 rounded sm:mr-4 mr-2 border border-gray-400 focus:outline-none focus:border-indigo-500 text-base py-2 px-4"
+            placeholder="Enter Your Email" type="text">
+          <button
+            class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Subscribe</button>
+        </div>
+        <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="bg-gray-200">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"></div>
+    </div>
+  </footer>
+
+</body>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+  $(document).ready(function () {
+    console.log("ready!");
+    let cart = JSON.parse(localStorage.getItem('cart'));
+    let arr = []
+    if (cart != undefined) {
+      Object.keys(cart).forEach(function eachKey(key) {
+        var quantity = 0
+        quantity = quantity + cart[key].quantity
+        arr.push(quantity)
+      })
+      quantity = arr.reduce((a, b) => a + b, 0)
+
+      // cartSize = Object.keys(cart).length
+      // let url = '/cart'
+      // let text = 'Cart'
+      // // $("#cart").append('<a href="' + url + '">' + text + '</a>');
+      $("#cart").append(`<a href="/cart" target="_blank"
+          class="inline-flex text-white bg-red-500 border-0 py-2 px-2 focus:outline-none hover:bg-red-600 rounded">Cart
+          ${quantity}</a>`);
+      // location.reload()
+    }
+    // else{
+    //   $("#cart").append(`<a href="/cart" target="_blank"
+    //       class="inline-flex text-white bg-gray-600 border-0 py-2 px-2 focus:outline-none hover:bg-indigo-400 rounded">Cart
+    //       0</a>`);
+    // }
+
+
+
+
+  });
+</script>
+
+</html>
