@@ -164,8 +164,7 @@ margin-top: 10px;
                 </span>
         
               </div>
-              <p class="leading-relaxed">${response.data[i].product_desc.slice(0, 95)}</p>
-              <div class="flex mt-6 items-center pb-5 border-b-2 border-blue-800 mb-5">
+              <div class="flex mt-6 items-center pb-5 mb-5">
                 <div class="flex">
                   <span class="mr-3">Available stock</span>
                   <button class="border-2 border-green-300 ml-0 bg-green-400 rounded-full w-6 h-6 focus:outline-none"></button>
@@ -174,16 +173,16 @@ margin-top: 10px;
               </div>
               <div class="flex">
                 <span class="title-font font-medium text-2xl text-gray-900">${response.data[i].price} RON</span>
-                <span id=${response.data[i].product_id} class="divpr py-1 px-6">
+                <span id=${response.data[i].product_id} class="divpr px-6">
                   <button class="flex ml-auto text-white bg-blue-800 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded" onclick="addToCart('${response.data[i].product_id}','${response.data[i].category}','${response.data[i].product_name}','${response.data[i].price}')">Buy</button>
                 </span>
               </div>
               </div>
               <div class="block mt-10 items-center pb-5 border-blue-800 mb-5">
-                <h4 class="text-gray-900 text-2xl border-b-2 border-blue-800 title-font font-medium mb-1">
+                <h4 class="inline text-gray-900 text-2xl border-b-2 border-blue-800 title-font font-medium mb-1">
                   Description
                 </h4>
-                <p>
+                <p class="py-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed egestas egestas fringilla phasellus faucibus. Sed risus ultricies tristique nulla. Sodales ut etiam sit amet. Placerat duis ultricies lacus sed. Gravida cum sociis natoque penatibus et magnis dis parturient. Aliquam eleifend mi in nulla. Bibendum neque egestas congue quisque egestas. Vestibulum morbi blandit cursus risus at ultrices mi tempus imperdiet. Adipiscing diam donec adipiscing tristique risus nec. Leo urna molestie at elementum eu facilisis sed odio. Fames ac turpis egestas sed tempus urna et. Sagittis eu volutpat odio facilisis mauris. Justo nec ultrices dui sapien eget mi. Aliquet nec ullamcorper sit amet risus.
                 </p>
               </div>

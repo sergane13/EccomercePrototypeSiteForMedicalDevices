@@ -1,6 +1,10 @@
-body{
-  background-color: #dde3fd;
+body {
+  /*background-color: #dde3fd;*/
 }
+
+/* 
+*   Navbar
+*/
 
 header {
   background-color: #dde3fd;
@@ -11,8 +15,21 @@ header {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
-  border-bottom: 1px solid rgb(10, 34, 153);
 }
+
+.search-bar {
+  width: 28rem;
+  background-color: #dde3fd;
+  border-bottom: 2px solid rgba(10, 34, 153, 0.5);
+}
+
+.search-button {
+  background-color: #dde3fd;
+}
+
+/* 
+*   Hero
+*/
 
 #hero {
   width: 100%;
@@ -34,12 +51,24 @@ header {
   right: 0;
 }
 
-.search-bar{
-  width: 28rem;
-  background-color:#dde3fd;
-  border-bottom: 2px solid rgba(10, 34, 153, 0.5);
+.hero-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 90px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
 }
 
-.search-button{
-  background-color: #dde3fd;
+#hero h1 {
+  color: rgba(255, 255, 255, 0.609);
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
